@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    background-image: url("bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    margin: 20px;
+}
+
+#board {
+    background-color: rgba(173, 154, 8, 0.485);
+    width: 540px;
+    height: 540px;
+    margin: 4% auto 0 auto;
+    flex-wrap: wrap;
+    border: 3px solid aliceblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board div {      
+    width: 150px;
+    height: 120px;    
+    margin: 50px 10px 0px 10px;
+    cursor: pointer;    
+
+}
+
+#board div {
+    background-image: url("soil.png");    
+    background-repeat: no-repeat;
+    background-size: contain;    
+}   
+
+
+#board div img {
+    /* all img tags inside the div tags */
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -40px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Game over card */
+
+#gameOver {
+    background-color: rgba(220, 230, 132, 0.935);
+    width: 30%;
+    margin: auto;    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-70%);
+}
+
+#gameOver h1 {
+    font-size: 40px;    
+}
+
+#gameOver button {
+    background-color: rgba(72, 214, 246, 0.893);
+    font-size: 20px;
+    border: 2px;    
+    margin: 20px;
+    padding: 2% 5%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#gameOver button:hover {
+    box-shadow: 5px 5px 10px 5px grey;
+}
+
+#gameOver img {
+    margin: 20px;
+}
