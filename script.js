@@ -32,8 +32,8 @@ let setGame = () => {
 
     }
     
-    setInterval(setMole, 600); //600 milliseconds = 0.6 seconds
-    setInterval(setPlant, 600); //600 milliseconds = 0.6 seconds
+    setInterval(setMole, 1000); //1000 milliseconds = 1 seconds
+    setInterval(setPlant, 1000); //1000 milliseconds = 1 seconds
 }
 
 function getRandomTile() {
